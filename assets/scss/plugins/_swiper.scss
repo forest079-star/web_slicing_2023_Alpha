@@ -1,0 +1,29 @@
+
+.info{
+  .info-swiper {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+  }
+  .swiper-wrapper {
+      margin-bottom: 0;
+      height: 351px;
+      @include media-breakpoint-up(md) {
+        height: 560px;
+      }
+    }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    position: static;
+    width: 10%;
+    height: 48px;
+    &:after{
+      content:"";
+    }
+  }
+
+}
+
+
