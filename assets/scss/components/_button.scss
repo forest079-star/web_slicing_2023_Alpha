@@ -1,0 +1,14 @@
+.btn.btn-primary:hover {
+  color: $secondary;
+}
+
+.btn.btn-outline-primary:hover {
+  color: $secondary;
+}
+
+.btn.btn-primary[disabled] {
+  background-color: #9a9a9a;
+  border-color: #9a9a9a;
+}
+
+

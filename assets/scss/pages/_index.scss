@@ -1,0 +1,65 @@
+.index {
+  .banner {
+    background-image: url('../images/home_background.png');
+    background-size: cover;
+  }
+
+  .banner-group{
+    margin-top: -184px;
+    transform: translateY(184px);
+  }
+
+  .banner-image-link{
+    height: 351px !important;
+    @include media-breakpoint-up(sm) {
+      height: 676px !important;
+    }
+    &:hover{
+      box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+    }
+  }
+  .banner-image-center-link{
+    height: 351px !important;
+    @include media-breakpoint-up(sm) {
+      height: 580px !important;
+    }
+    &:hover{
+      box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+    }
+  }
+
+  .banner-gradient-lr{
+    @include gradient-x(#7000FF, #11002D);
+  }
+
+
+  .info{
+    padding-top: 300px;
+    @include media-breakpoint-up(md) {
+      padding-top: 364px;
+    }
+    @include gradient-y( #300871, #000000);
+    .info-title{
+      top: 192px;
+    }
+  }
+
+  .info-banner{
+      z-index: 1;
+      background-image: url('../images/carousel_background.png');
+      background-position: center;
+      filter: blur(12px);
+
+  }
+
+
+
+
+
+
+  .rotate-image {
+    width: 196px;
+    height: 196px;
+    animation: rotate infinite 60s linear;
+  }
+}

@@ -1,0 +1,10 @@
+.page-link {
+  // 寬高最小值
+  min-width: 40px;
+  min-height: 40px;
+
+  // 水平置中、垂直置中內層元素
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

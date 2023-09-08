@@ -1,0 +1,54 @@
+.card{
+  &-date{
+    @include font-set(32px, 37px);
+    @include media-breakpoint-up(md){
+      @include font-set(48px, 56px)
+
+    }
+  }
+  &-body{
+    h3{
+      @include font-set(18px, 26px, 700);
+      @include media-breakpoint-up(md){
+        @include font-set(24px, 34px, 700);
+      }
+    }
+  }
+  &-footer-tag{
+    &:hover{
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+  &-footer-icon{
+    width: 20px;
+    height: 20px;
+    @include media-breakpoint-up(md){
+      width: 24px;
+      height: 24px;
+    } 
+  }
+
+  &-sell-btn{
+    position: relative;
+    z-index: 2;
+    &:hover:after{
+      content:"";
+      position: absolute;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      z-index: -1;
+      background-color: $secondary;
+      top: -3.5px;
+      left: -10px;
+    }
+  }
+  .image{
+    object-fit: cover;
+    height: 210px;
+    @include media-breakpoint-up(md){
+      height: 255px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@include pad {
+  .navbar-collapse {
+    border-top: 1px solid map-get($theme-colors, secondary);
+    // @include linear-gradient(180deg, (#7000ff, #11002d ));
+  }
+}
+
+// #7000FF, #11002D
