@@ -32,34 +32,63 @@
     @include gradient-x(#7000FF, #11002D);
   }
 
+  .banner-gradient-rl{
+    @include gradient-x(#11002D, #7000FF);
+  }
+
+  .banner-radial{
+    @include radial-gradient(#28085C, #000000);
+  }
 
   .info{
     padding-top: 300px;
     @include media-breakpoint-up(md) {
       padding-top: 364px;
     }
-    @include gradient-y( #300871, #000000);
+    @include gradient-y($primary-500, #000000);
     .info-title{
       top: 192px;
     }
   }
 
   .info-banner{
-      z-index: 1;
+      z-index: 0;
       background-image: url('../images/carousel_background.png');
       background-position: center;
       filter: blur(12px);
 
   }
 
-
-
-
-
-
   .rotate-image {
     width: 196px;
     height: 196px;
     animation: rotate infinite 60s linear;
+  }
+
+
+  .news{
+    .btn-more{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 132px;
+      height: 132px;
+     
+      &:hover{
+        color:$primary-300;
+      }
+    }
+    .btn-more-bg{
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url('../images/Group_2.png');
+      background-repeat: no-repeat;
+      animation: rotate infinite 60s linear;
+    }
   }
 }

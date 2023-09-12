@@ -144,13 +144,26 @@ $utilities: map-merge(
         5:  2px,
         6:  2.4px,
         "s16":16px,
+        "s20":20px,
         "s24":24px,
         "s26":26px,
+        "s32":32px,
+        "s40":40px,
         "s48":48px,
         "s80":80px,
         8:  3.2px,
         10: 4px,
         12: 4.8px,
+      ),
+    ),
+    "word-spacing": (
+      responsive: true,
+      print: true,
+      property: word-spacing,
+      class: word,
+      values: (
+        1:24px,
+        2:32px
       ),
     ),
     'object-position': (
