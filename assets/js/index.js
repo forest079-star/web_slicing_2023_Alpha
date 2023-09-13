@@ -32,6 +32,17 @@ var swiper = new Swiper('.info-swiper', {
   },
 });
 
+var shareSwiper = new Swiper('.share-swiper', {
+  autoWidth: false,
+  slidesPerView: 'auto',
+  // 滑鼠滾輪移動
+  mousewheel: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+});
+
 // const albumsSwiper = new Swiper('.albums-swiper', {
 //   slidesPerView: 'auto',
 //   speed: 10000,

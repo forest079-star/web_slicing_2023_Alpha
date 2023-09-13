@@ -91,4 +91,62 @@
       animation: rotate infinite 60s linear;
     }
   }
+
+  .share{
+    @include radial-gradient(#000000, #28085C);
+    .share-swiper {
+      .swiper-wrapper {
+        margin-bottom: 0;
+        @include media-breakpoint-up(md) {
+          height: 416px;
+        }
+      }
+      .swiper-slide{
+        &:nth-child(odd){
+          background-color: $primary-400;
+          color:white;
+        }
+        background-color: white;
+        color:black;
+      }
+    }
+    .share-card-m{
+      height: 351px;
+      &:nth-child(odd){
+        background-color: $primary-400;
+        color:white;
+      }
+      background-color: white;
+      color:black;
+    }
+    /* 滾動條可拖曳區塊的顏色 */
+    .swiper-scrollbar-drag {
+      background-color: #FFF;
+    }
+
+    /* 整個滾動條的背景顏色 */
+    .swiper-scrollbar {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .share-text-bottom{
+      color:rgba(255, 255, 255, 0.04);
+      top: -124px;
+      left: -58%;
+      @include media-breakpoint-up(md) {
+        top: -304px;
+        left: -17%;
+      }
+    }
+  }
+  .contact{
+    .line{
+      height: 8px;
+      width: 124px;
+      border-radius: 24px;
+      @include media-breakpoint-up(md) {
+        height: 12px;
+      }
+    }
+  }
 }
