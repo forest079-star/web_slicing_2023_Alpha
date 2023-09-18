@@ -40,6 +40,8 @@ $utilities: map-merge(
               map-get(map-get($utilities, "height"), "values"),
               (
                 0:0,
+                196:196px,
+                232:232px,
               )
             ),
         )
@@ -98,6 +100,15 @@ $utilities: map-merge(
       class: end,
       values: $position-values
     ),
+    "border-top": (
+      responsive: true, // *custom - border-end
+      property: border-top,
+      class: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
     "border-end": (
       responsive: true, // *custom - border-end
       property: border-right,
@@ -150,6 +161,7 @@ $utilities: map-merge(
         "s32":32px,
         "s40":40px,
         "s48":48px,
+        "s64":64px,
         "s80":80px,
         8:  3.2px,
         10: 4px,

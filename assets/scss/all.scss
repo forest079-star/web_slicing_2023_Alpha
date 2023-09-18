@@ -30,8 +30,10 @@
 // 6. 自訂義位置 ===========================================================
 // base -
 @import 'base/base.scss';
+
 // mixins -
 @import 'mixins/mixin';
+
 // utils -
 @import 'utils/tools';
 @import 'utils/animations';
@@ -45,11 +47,18 @@
 @import 'components/button';
 @import 'components/pagination';
 @import 'components/card-event';
+// @import './components/btn';
+// @import './components/tag';
+// @import './components/marqee';
+// @import './components/title';
+// @import './components/eventcard';
+// @import './components/pagination';
+// @import './components/stepprogress';
 
 // plugins (外部套件)
 @import '../../node_modules/swiper/swiper-bundle.css';
 @import 'aos/dist/aos';
-// custom Plugins
+// custom Plugins (修改套件)
 @import 'plugins/swiper';
 
 // Vendors
@@ -60,5 +69,6 @@
 
 // pages -
 @import 'pages/index.scss';
+@import 'pages/contactus';
 
 
