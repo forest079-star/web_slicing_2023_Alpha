@@ -59,13 +59,7 @@
 
   }
 
-  .rotate-image {
-    width: 196px;
-    height: 196px;
-    animation: rotate infinite 60s linear;
-  }
-
-
+  
   .news{
     .btn-more{
       display: flex;
@@ -173,4 +167,10 @@
       }
     }
   }
+}
+
+.rotate-image {
+    width: 196px;
+    height: 196px;
+    animation: rotate infinite 60s linear;
 }
