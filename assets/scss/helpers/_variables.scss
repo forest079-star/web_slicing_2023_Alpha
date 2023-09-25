@@ -1429,7 +1429,7 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 $accordion-padding-y:                     1rem !default;
 $accordion-padding-x:                     1.25rem !default;
 $accordion-color:                         var(--#{$prefix}body-color) !default;
-$accordion-bg:                            var(--#{$prefix}body-bg) !default;
+$accordion-bg:                            transparent; //var(--#{$prefix}body-bg) !default;  // *custom - $accordion-bg
 $accordion-border-width:                  var(--#{$prefix}border-width) !default;
 $accordion-border-color:                  var(--#{$prefix}border-color) !default;
 $accordion-border-radius:                 var(--#{$prefix}border-radius) !default;
@@ -1438,25 +1438,29 @@ $accordion-inner-border-radius:           subtract($accordion-border-radius, $ac
 $accordion-body-padding-y:                $accordion-padding-y !default;
 $accordion-body-padding-x:                $accordion-padding-x !default;
 
-$accordion-button-padding-y:              $accordion-padding-y !default;
+$accordion-button-padding-y:              accordion-padding-y !default; 
 $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  var(--#{$prefix}body-color) !default;
 $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
+$accordion-button-active-bg:              transparent;// var(--#{$prefix}primary-bg-subtle) !default;  // *custom - $accordion-button-active-bg
 $accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;
 
-$accordion-button-focus-border-color:     $input-focus-border-color !default;
-$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+$accordion-button-focus-border-color:     none; //$input-focus-border-color !default; // *custom - $accordion-button-focus-border-color
+$accordion-button-focus-box-shadow:       none; //$btn-focus-box-shadow !default;  // *custom - $accordion-button-focus-box-shadow
 
-$accordion-icon-width:                    1.25rem !default;
+$accordion-icon-width:                    40px;//1.25rem !default;  // *custom - $accordion-icon-width
 $accordion-icon-color:                    $body-color !default;
 $accordion-icon-active-color:             $primary-text-emphasis !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 
-$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+// $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+// $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+
+// *custom - $accordion-button-icon
+$accordion-button-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='none'> <mask id='mask0_456_764' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='40' height='40'> <rect width='40' height='40' fill='#1F0F39'/> </mask> <g mask='url(#mask0_456_764)'> <path d='M18.3333 31.6668V21.6668H8.33325V18.3335H18.3333V8.3335H21.6666V18.3335H31.6666V21.6668H21.6666V31.6668H18.3333Z' fill='#1F0F39'/> </g> </svg>") !default;
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='none'> <mask id='mask0_303_5734' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='40' height='40'> <rect width='40' height='40' fill='#1F0F39'/></mask> <g mask='url(#mask0_303_5734)'> <path d='M8.33301 21.6667V18.3333H31.6663V21.6667H8.33301Z' fill='#1F0F39'/> </g></svg>") !default;
 // scss-docs-end accordion-variables
 
 // Tooltips
@@ -1641,7 +1645,7 @@ $progress-bar-transition:           width .6s ease !default;
 
 // scss-docs-start list-group-variables
 $list-group-color:                  var(--#{$prefix}body-color) !default;
-$list-group-bg:                     var(--#{$prefix}body-bg) !default;
+$list-group-bg:   transparent;                  //var(--#{$prefix}body-bg) !default;  // *custom
 $list-group-border-color:           var(--#{$prefix}border-color) !default;
 $list-group-border-width:           var(--#{$prefix}border-width) !default;
 $list-group-border-radius:          var(--#{$prefix}border-radius) !default;

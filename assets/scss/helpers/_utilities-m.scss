@@ -126,6 +126,12 @@ $utilities: map-merge(
         0: 0,
       )
     ),
+    "border-bottom-style": (
+      responsive: true,
+      property: border-bottom-style,
+      class: border-bottom,
+      values: none dotted inset double dashed,
+    ),
     "translate-middle": (
       responsive: true, // *custom - translate-middle
       property: transform,
