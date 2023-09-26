@@ -1,0 +1,7 @@
+.news{
+  .news-mobile-img{
+    @include media-breakpoint-up(lg) {
+      height: 226px;
+    }
+  }
+}
