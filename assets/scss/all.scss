@@ -1,3 +1,9 @@
+// ! 載入套件 調整 0
+// 載入 aos 套件
+@import 'aos/dist/aos';
+// 載入 swiper 套件
+@import 'swiper/css/bundle';
+
 // 1. 首先包含功能函數（這樣你可以操作顏色、SVG、計算等）
 @import "../../node_modules/bootstrap/scss/functions";
 
@@ -57,8 +63,8 @@
 // @import './components/stepprogress';
 
 // plugins (外部套件)
-@import '../../node_modules/swiper/swiper-bundle.css';
-@import 'aos/dist/aos';
+// @import '../../node_modules/swiper/swiper-bundle.css';
+// @import 'aos/dist/aos';
 // custom Plugins (修改套件)
 @import 'plugins/swiper';
 
@@ -73,5 +79,6 @@
 @import 'pages/contactus';
 @import 'pages/register';
 @import 'pages/news';
+@import 'pages/about';
 
 
