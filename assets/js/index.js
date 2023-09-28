@@ -40,24 +40,22 @@ var shareSwiper = new Swiper('.share-swiper', {
   },
 });
 
-function productHandler() {
-  const swiper3 = new Swiper(".sw3", {
-    // 分頁、左右箭頭、滾動條若有使用則必需設定
-    // 分頁
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    //
-    slidesPerView: 1,
-    spaceBetween: 0,
+const swiper3 = new Swiper('.sw-products', {
+  // 分頁、左右箭頭、滾動條若有使用則必需設定
+  // 分頁
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  //
+  slidesPerView: 1,
+  spaceBetween: 0,
 
-    // 左右箭頭
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-}
+  // 左右箭頭
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 // const albumsSwiper = new Swiper('.albums-swiper', {
 //   slidesPerView: 'auto',
