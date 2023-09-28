@@ -179,6 +179,13 @@ $utilities: map-merge(
         12: 4.8px,
       ),
     ),
+    "transition-none": (
+      responsive: false,
+      print: true,
+      property: transition,
+      class: transition,
+      values: none
+    ),
     "word-spacing": (
       responsive: true,
       print: true,

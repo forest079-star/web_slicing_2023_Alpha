@@ -11,10 +11,10 @@ itemsLeft.forEach(item => {
     scrollTrigger: {
       trigger: item,
       // markers: true,
-      start: 'top 75%',
-      end: 'bottom 25%',
-      toggleActions:"play none none none"
-    }
+      start: 'top 95%',
+      // end: 'bottom 0%',
+      toggleActions: 'restart  none none none',
+    },
   });
 });
 

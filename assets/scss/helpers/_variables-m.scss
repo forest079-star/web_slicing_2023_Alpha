@@ -106,7 +106,7 @@ $input-bg: transparent;
 $form-check-input-border: 1px solid #030303; // *custom
 
 
-// set 其他顏色設定
+// *set 其他顏色設定
 $custom-theme-colors-bg-subtle: (
   "secondary-light": $secondary-light,
 );
@@ -116,7 +116,7 @@ $custom-theme-colors-bg-subtle: (
 $font-family-sans-serif: 'Noto Sans TC', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 
-// set 其他設定
+// *set 其他設定
 $navbar-toggler-focus-width: none;//$btn-focus-width !default; /*custom*/
 $enable-shadows: false;
 
