@@ -12,33 +12,33 @@
     
     // diane
     .bg-ai-1{
-      background-image: url('../assets/images/mobile/diane_choose.png');
+      background-image: url('../images/mobile/diane_choose.png');
       @include media-breakpoint-up(lg){
-        background-image: url('../assets/images/horizontal/diane_horizontal.png');
+        background-image: url('../images/horizontal/diane_horizontal.png');
       }
     }
 
     // Felix
     .bg-ai-2{
-      background-image: url('../assets/images/mobile/felix_choose.png');
+      background-image: url('../images/mobile/felix_choose.png');
       @include media-breakpoint-up(lg){
-        background-image: url('../assets/images/horizontal/felix_horizontal.png');
+        background-image: url('../images/horizontal/felix_horizontal.png');
       }
     }
 
     // Karina
     .bg-ai-3{
-      background-image: url('../assets/images/mobile/karina_choose.png');
+      background-image: url('../images/mobile/karina_choose.png');
       @include media-breakpoint-up(lg){
-        background-image: url('../assets/images/horizontal/karina_horizontal.png');
+        background-image: url('../images/horizontal/karina_horizontal.png');
       }
     }
 
     // Vito
     .bg-ai-4{
-      background-image: url('../assets/images/mobile/vito_choose.png');
+      background-image: url('../images/mobile/vito_choose.png');
       @include media-breakpoint-up(lg){
-        background-image: url('../assets/images/horizontal/vito_horizontal.png');
+        background-image: url('../images/horizontal/vito_horizontal.png');
       }
     }
     
