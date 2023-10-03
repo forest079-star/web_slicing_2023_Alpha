@@ -149,6 +149,7 @@
       height: 406px;
       @include media-breakpoint-up(md) {
         min-height: 406px;
+        height: auto;
       }
       &:before{
         content: "";
